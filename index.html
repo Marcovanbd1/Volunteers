@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <title>Weymouth & Portland Volunteer Hub</title>
+  <meta name="description" content="A warm, simple doorway to volunteering in Weymouth and Portland. Curated monthly picks with a link to all roles on Volunteering Dorset." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0f172a;         /* slate-900 */
+      --panel: #111827ee;    /* gray-900 */
+      --text: #e5e7eb;       /* gray-200 */
+      --muted: #94a3b8;      /* slate-400 */
+      --brand: #22c55e;      /* green-500 */
+      --brand-ink: #052e16;  /* green-950 */
+      --link: #60a5fa;       /* blue-400 */
+      --ring: #34d399;       /* emerald-400 */
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      color: var(--text);
+      background:
+        radial-gradient(1200px 600px at 80% -10%, #064e3b33, transparent 70%),
+        radial-gradient(800px 500px at -10% 10%, #1e293b66, transparent 70%),
+        var(--bg);
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+    a { color: var(--link); }
+    .container { max-width: 980px; margin: 0 auto; padding: 24px; }
+
+    header {
+      position: sticky; top: 0; z-index: 10;
+      backdrop-filter: blur(8px);
+      background: linear-gradient(to bottom, #0b1224dd, #0b122400);
+      border-bottom: 1px solid #1f2937aa;
+    }
+    .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; color: inherit; }
+    .logo { width: 36px; height: 36px; border-radius: 12px; background: linear-gradient(135deg, #22c55e, #34d399); display: grid; place-items: center; color: var(--brand-ink); font-weight: 800; }
+    .title { font-size: clamp(18px, 2.2vw, 22px); font-weight: 700; }
+
+    .hero { padding: 48px 24px 16px; text-align: center; }
+    .hero h1 { font-size: clamp(28px, 5vw, 44px); margin: 0 0 10px; letter-spacing: -0.02em; }
+    .hero p { margin: 0 auto; max-width: 700px; color: var(--muted); }
+
+    .cta-bar { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-top: 22px; }
+    .btn { appearance: none; border: 0; border-radius: 12px; padding: 12px 16px; font-weight: 600; cursor: pointer; transition: transform .05s ease, box-shadow .2s ease, background .2s ease; }
+    .btn:focus-visible { outline: none; box-shadow: 0 0 0 3px var(--ring); }
+    .btn-primary { background: var(--brand); color: var(--brand-ink); }
+    .btn-primary:hover { transform: translateY(-1px); }
+    .btn-ghost { background: #111827aa; color: var(--text); border: 1px solid #1f2937; }
+
+    .section { padding: 24px; }
+
+    .cards { display: grid; gap: 16px; grid-template-columns: repeat(1, minmax(0, 1fr)); }
+    @media (min-width: 640px) { .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+    @media (min-width: 920px) { .cards { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+
+    .card { position: relative; overflow: clip; border: 1px solid #23324a; border-radius: 16px; padding: 16px; background: linear-gradient(180deg, #0b1224f2, #0b1224cc); }
+    .badge { display: inline-block; font-size: 12px; padding: 4px 10px; border-radius: 999px; background: #155e75; color: #cffafe; border: 1px solid #0e7490; }
+    .card h3 { margin: 10px 0 6px; font-size: 18px; letter-spacing: -0.01em; }
+    .meta { color: var(--muted); font-size: 14px; }
+    .card p { margin: 10px 0 14px; }
+    .card .actions { display: flex; gap: 10px; flex-wrap: wrap; }
+
+    .well { border: 1px dashed #374151; border-radius: 16px; padding: 16px; background: #0b1224aa; }
+
+    .how { display: grid; gap: 16px; grid-template-columns: repeat(1, minmax(0, 1fr)); }
+    @media (min-width: 800px) { .how { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+    .how .step { border: 1px solid #23324a; border-radius: 16px; padding: 16px; background: linear-gradient(180deg, #0b1224f2, #0b1224cc); }
+    .step h4 { margin: 4px 0 8px; }
+
+    footer { padding: 32px 24px; color: var(--muted); text-align: center; border-top: 1px solid #1f2937aa; }
+
+    /* Accessibility helpers */
+    @media (prefers-reduced-motion: reduce) {
+      * { transition: none !important; animation: none !important; }
+    }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+  </style>
+</head>
+<body>
+  <header role="banner">
+    <div class="container" style="display:flex; align-items:center; justify-content:space-between; gap:16px;">
+      <a class="brand" href="#" aria-label="Weymouth and Portland Volunteer Hub">
+        <span class="logo" aria-hidden="true">WP</span>
+        <span class="title">Weymouth and Portland Volunteer Hub</span>
+      </a>
+      <nav aria-label="Primary">
+        <a href="#picks" class="btn btn-ghost">This month</a>
+        <a href="#how" class="btn btn-ghost">How it works</a>
+        <a href="#contact" class="btn btn-ghost">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container" role="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <h1 id="hero-title">Give a little time. Make a big difference.</h1>
+      <p>
+        This is a simple doorway into volunteering on Portland and in Weymouth. Each month we share a small set of curated picks, with a link to all roles on Volunteering Dorset. Friendly, clear, easy to act on.
+      </p>
+      <div class="cta-bar" role="group" aria-label="Primary actions">
+        <a class="btn btn-primary" href="https://www.volunteeringdorset.org.uk/" target="_blank" rel="noopener" aria-label="See all roles on Volunteering Dorset">
+          See all roles on Volunteering Dorset
+        </a>
+        <a class="btn btn-ghost" href="#picks">See this month’s picks</a>
+      </div>
+    </section>
+
+    <section id="picks" class="section" aria-labelledby="picks-title">
+      <h2 id="picks-title" style="margin:0 0 12px; font-size:24px;">This month’s picks</h2>
+      <p class="meta" style="margin:0 0 16px;">Updated monthly by Sue from the PPG. These are quick wins with clear details. Everything here is also listed on Volunteering Dorset.</p>
+
+      <div class="cards" role="list">
+        <!-- Card 1 -->
+        <article class="card" role="listitem">
+          <span class="badge" aria-label="Location">Portland</span>
+          <h3>Beach Clean at Chesil Cove</h3>
+          <p class="meta">Saturday 23 November. 10:00 to 12:00. Family friendly.</p>
+          <p>Help keep our coastline beautiful. Gloves and bags provided. Wear sturdy shoes.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="https://www.volunteeringdorset.org.uk/" target="_blank" rel="noopener">View on Volunteering Dorset</a>
+            <a class="btn btn-ghost" href="#contact">Ask a question</a>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="card" role="listitem">
+          <span class="badge">Weymouth</span>
+          <h3>Warm Space Host</h3>
+          <p class="meta">Weekdays in December. 2 hour shifts. Training provided.</p>
+          <p>Welcome people in for a hot drink and company. A kind face and a chat go a long way.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="https://www.volunteeringdorset.org.uk/" target="_blank" rel="noopener">View on Volunteering Dorset</a>
+            <a class="btn btn-ghost" href="#contact">Ask a question</a>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="card" role="listitem">
+          <span class="badge">Both towns</span>
+          <h3>Food Bank Driver</h3>
+          <p class="meta">Flexible. Use of own car. Fuel costs covered.</p>
+          <p>Pick up donations and drop off parcels. You will need a full driving licence and insurance.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="https://www.volunteeringdorset.org.uk/" target="_blank" rel="noopener">View on Volunteering Dorset</a>
+            <a class="btn btn-ghost" href="#contact">Ask a question</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="well" style="margin-top:16px;">
+        <strong>Want more ideas.</strong> Browse everything on <a href="https://www.volunteeringdorset.org.uk/" target="_blank" rel="noopener">Volunteering Dorset</a>. You can filter by location and interest.
+      </div>
+    </section>
+
+    <section id="how" class="section" aria-labelledby="how-title">
+      <h2 id="how-title" style="margin:0 0 12px; font-size:24px;">How it works</h2>
+      <div class="how">
+        <div class="step">
+          <h4>1. Pick something</h4>
+          <p>Start with the monthly picks or search all roles on Volunteering Dorset.</p>
+        </div>
+        <div class="step">
+          <h4>2. Sign up in one place</h4>
+          <p>Click through to the role on Volunteering Dorset. Use the form there to register interest.</p>
+        </div>
+        <div class="step">
+          <h4>3. Turn up and enjoy it</h4>
+          <p>You will get details from the organiser. If anything is unclear, Sue can help.</p>
+        </div>
+      </div>
+      <p class="meta" style="margin-top:12px;">If a role is not on Volunteering Dorset it will not appear here. This keeps everything in one trusted place.</p>
+    </section>
+
+    <section id="contact" class="section" aria-labelledby="contact-title">
+      <h2 id="contact-title" style="margin:0 0 12px; font-size:24px;">Questions or need a hand.</h2>
+      <div class="well" role="note">
+        <p><strong>Contact Sue</strong>, our volunteer coordinator. Friendly, local, happy to help.</p>
+        <p>Email: <a href="mailto:sue@example.org">sue@example.org</a> <br> Phone: <a href="tel:+441301234567">0130 123 4567</a></p>
+        <p class="meta">Please do not include medical information. If your question is about health support, see our PCN website.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="share-title">
+      <h2 id="share-title" style="margin:0 0 12px; font-size:24px;">Share this page</h2>
+      <div class="well">
+        <p>Pop a QR code on a noticeboard, or share the link by text or WhatsApp. Small actions help people find their way to volunteering.</p>
+        <details>
+          <summary>Show simple QR for this page</summary>
+          <p class="meta">Use your browser print or share tools to save the QR as an image. Works offline once saved.</p>
+          <img id="qr" src="" alt="QR code for this page" width="160" height="160" style="border-radius:8px; background:#fff; padding:8px;" />
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container">
+      <p>Weymouth and Portland Primary Care Network. Volunteer Hub.</p>
+      <p class="meta">Made for people, not platforms. Accessible. Fast. No account needed.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Generate a QR code for the current URL using the free charts API
+    // No tracking. Renders client side only.
+    (function makeQR(){
+      try {
+        const u = encodeURIComponent(location.href);
+        const el = document.getElementById('qr');
+        if (!el) return;
+        el.src = `https://api.qrserver.com/v1/create-qr-code/?size=160x160&margin=0&data=${u}`;
+      } catch(e) { /* ignore */ }
+    })();
+
+    // Respect reduced motion users by disabling small hover lift on buttons
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      const style = document.createElement('style');
+      style.textContent = '.btn-primary:hover{ transform:none !important }';
+      document.head.appendChild(style);
+    }
+  </script>
+</body>
+</html>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
